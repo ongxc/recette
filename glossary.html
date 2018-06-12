@@ -6,49 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/recipe.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/recette.css">
 
     <title>recette</title>
 
-    <!-- Jumbotron-->
-    <div class="jumbotron" style=" margin: 0;">
-      <div class="container">
-        <h1 class="">recette  <small class="font-weight-light">. recipe</small></h1>
-        <h5>À votre goût / To one's liking</h5>
-      </div>
+    <!-- Banner-->
+    <div class="head-banner">
+      <h1>recette  <small class="font-weight-light">. recipe</small></h1>
+      <h5>À votre goût / To one's liking</h5>
     </div>
     
     <!--Navbar-->
-    <nav class="navbar navbar-expand bg-light navbar-light justify-content-center sticky-top">
+    <nav class="nav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link px-3 px-xs-2 px-sm-5 float-left float-sm-none" href="index.html">Home</a>
+          <a class="nav-link" href="index.html">Home</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle px-3 px-xs-2 px-sm-5" href="#" id="navbardrop" data-toggle="dropdown">
-            Recipe
-          </a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Alligot</a>
-            <a class="dropdown-item" href="#">Link 2</a>
-            <a class="dropdown-item" href="#">Link 3</a>
+          <a class="nav-link" href="#">Recipe</a>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
           </div>
         </li>
-        <li class="nav-item active">
-          <a class="nav-link px-3 px-xs-2 px-sm-5 float-right float-sm-none" href="glossary.html">Glossary</a>
+        <li class="nav-item">
+          <a class="nav-link" href="glossary.html">Glossary</a>
         </li>
       </ul>
     </nav>
   </head>
   
   <body>
-      <div class="container  my-5 py-5">
+      <div class="section-column">
         <h1>Glossary</h1>
         <p>Type something in the input field to search the table for first names, last names or emails:</p>  
-        <input class="form-control" id="search" type="text" placeholder="Search..">
-        <br>
-        <table class="table table-borderless mt-2">
+        <table class="table">
             <thead>
                 <tr>
                     <th>Term</th>
@@ -84,12 +78,10 @@
 
     <!--Footer-->
     <footer>
-        <div class="container-fluid bg-light py-5">
-            <div class="container">
-                <h6>Lorem ipsum</h6>
-                <p>Lorem ipsum</p>
-            </div>
-        </div>
+      <div class="section-column">
+        <h3>Lorem ipsum</h6>
+        <p>Lorem ipsum</p>
+      </div>
     </footer>
     
 

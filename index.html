@@ -6,74 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/recipe.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/recette.css">
 
     <title>recette</title>
 
-    <!-- Jumbotron-->
-    <div class="jumbotron" style=" margin: 0;">
-      <div class="container">
-        <h1 class="">recette  <small class="font-weight-light">. recipe</small></h1>
-        <h5>À votre goût / To one's liking</h5>
-      </div>
+    <!-- Banner-->
+    <div class="head-banner">
+      <h1>recette  <small class="font-weight-light">. recipe</small></h1>
+      <h5>À votre goût / To one's liking</h5>
     </div>
     
     <!--Navbar-->
-    <nav class="navbar navbar-expand bg-light navbar-light justify-content-center sticky-top">
+    <nav class="nav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active px-3 px-xs-1 px-sm-5 float-left float-sm-none" href="index.html">Home</a>
+          <a class="nav-link" href="index.html">Home</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle px-3 px-xs-1 px-sm-5" href="#" id="navbardrop" data-toggle="dropdown">
-            Recipe
-          </a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Alligot</a>
-            <a class="dropdown-item" href="#">Link 2</a>
-            <a class="dropdown-item" href="#">Link 3</a>
+          <a class="nav-link" href="#">Recipe</a>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link px-3 px-xs-1 px-sm-5 float-right float-sm-none" href="glossary.html">Glossary</a>
+          <a class="nav-link" href="glossary.html">Glossary</a>
         </li>
       </ul>
     </nav>
   </head>
 
     <!--Welcome-->
-    <div class="container my-5 py-5" >
+    <div class="section-column" >
       <h1>Welcome</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum mattis varius. Curabitur sit amet augue id lorem pharetra finibus. Sed purus neque, finibus non malesuada a, posuere in eros. Donec sed consequat erat. Aliquam fringilla fringilla massa, quis rutrum massa. Nunc maximus ultricies turpis, et malesuada nisi tincidunt quis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras urna lectus, venenatis eget lectus nec, hendrerit congue elit. Aenean mi tortor, dictum eget dui at, semper mollis enim. Nunc nec viverra dolor, eget gravida odio. Quisque non ex fringilla purus blandit sodales eu ac ligula. Duis consectetur nisi eget elit maximus vehicula. Nunc in faucibus leo. Curabitur quam nibh, iaculis sit amet neque mollis, feugiat ullamcorper lacus. Praesent sed turpis ut enim ullamcorper ultricies at quis felis. </p>
     </div>
 
     <!--Chef Introduction-->
-    <div class="bg-secondary mt-5" style="padding-top: 20vh; padding-bottom: 20vh">
-      <div class="container text-right">
-        <div class="row">
-          <div class="col-sm-4 px-4">
-              <img src="img/raymond.jpg" class="img-fluid rounded float-left"> 
-          </div>
-          <div class="col-sm-8 pt-5 pt-sm-0 ">
-            <h1 class="font-weight-bold mb-3">'Lorem ipsum dolor sit amet'</h1>
-            <blockquote class="blockquote">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum mattis varius. Curabitur sit amet augue id lorem pharetra finibus. Sed purus neque, finibus non malesuada a, posuere in eros. Donec sed consequat erat. Aliquam fringilla fringilla massa, quis rutrum massa. Nunc maximus ultricies turpis, et malesuada nisi tincidunt quis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras urna lectus, venenatis eget lectus nec, hendrerit congue elit. Aenean mi tortor, dictum eget dui at, semper mollis enim. Nunc nec viverra dolor, eget gravida odio. Quisque non ex fringilla purus blandit sodales eu ac ligula. Duis consectetur nisi eget elit maximus vehicula. Nunc in faucibus leo. Curabitur quam nibh, iaculis sit amet neque mollis, feugiat ullamcorper lacus. Praesent sed turpis ut enim ullamcorper ultricies at quis felis.</p>
-              <footer class="blockquote-footer text-body">Raymond Blanc</footer>
-            </blockquote>
-          </div>
+    <div class="fullsection">
+      <div class="section-row" style="background-color: #ccc">
+        <div class="width-35">
+          <img src="img/raymond.jpg" class="chefImg"> 
         </div>
+        <div class="section-column text-align-right">
+          <blockquote class="">
+            <h1 class="">'Lorem ipsum dolor sit amet'</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum mattis varius. Curabitur sit amet augue id lorem pharetra finibus. Sed purus neque, finibus non malesuada a, posuere in eros. Donec sed consequat erat. Aliquam fringilla fringilla massa, quis rutrum massa. Nunc maximus ultricies turpis, et malesuada nisi tincidunt quis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras urna lectus, venenatis eget lectus nec, hendrerit congue elit. Aenean mi tortor, dictum eget dui at, semper mollis enim. Nunc nec viverra dolor, eget gravida odio. Quisque non ex fringilla purus blandit sodales eu ac ligula. Duis consectetur nisi eget elit maximus vehicula. Nunc in faucibus leo. Curabitur quam nibh, iaculis sit amet neque mollis, feugiat ullamcorper lacus. Praesent sed turpis ut enim ullamcorper ultricies at quis felis.</p>
+          <footer class="">- Raymond Blanc</footer>
+        </blockquote>
+        </div>
+        
       </div>
     </div>
 
     <!--Footer-->
     <footer>
-        <div class="container-fluid bg-light py-5">
-            <div class="container">
-                <h6>Lorem ipsum</h6>
-                <p>Lorem ipsum</p>
-            </div>
-        </div>
+      <div class="section-column">
+        <h3>Lorem ipsum</h6>
+        <p>Lorem ipsum</p>
+      </div>
     </footer>
     
 
