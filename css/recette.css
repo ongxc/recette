@@ -18,6 +18,9 @@ body {
     text-align: left;
     background-color: var(--primary);
 }
+img{
+    border-radius: 0.3rem;
+}
 
 h1,
 h2,
@@ -49,7 +52,7 @@ a:visited {
 }
 
 .head-banner {
-    padding: 4rem 3em;
+    padding: 6rem 5rem;
     background-color: var(--primary);
     background-image: url(../img/banner.jpg);
     background-size: cover;
@@ -190,6 +193,9 @@ a:visited {
 .pad-right-2 {
     padding-right: 2rem;
 }
+.pad-left-2 {
+    padding-left: 2rem;
+}
 
 .text-align-right {
     text-align: right;
@@ -230,4 +236,8 @@ tbody tr:hover {
 
 .color-secondary {
     background-color: var(--secondary);
+}
+
+.head-banner h1, .head-banner h5{
+    margin-left: 8rem;
 }
