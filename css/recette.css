@@ -6,17 +6,19 @@
 }
 
 html {
-  font-family: "Segoe UI", monospace;
+  font-family: "Domine", serif;
   font-size: 1rem;
 }
 
 body {
   margin: 0;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.8;
   color: var(--text-primary);
   text-align: left;
-  background-color: var(--primary);
+  background-color: white;
+  z-index: 1;
+  position: relative;
 }
 img {
   border-radius: 0.3rem;
@@ -51,25 +53,32 @@ a:visited {
   color: inherit;
 }
 
+.content {
+  z-index: 100;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
 .head-banner {
-  padding: 6rem 5rem;
   background-color: var(--primary);
   background-image: url(../img/banner.jpg);
   background-size: cover;
   background-position-x: center;
   background-position-y: center;
   width: 100%;
-}
-
-.nav {
+  z-index: 1;
   position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 0;
-  flex-flow: row nowrap;
-  justify-content: center;
-  background-color: var(--secondary);
+  padding-top: 6rem;
+  overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  top: 0px;
+  left: 0px;
+  z-index: 3;
 }
 
 .navbar-nav {
@@ -80,17 +89,30 @@ a:visited {
   margin: 0;
 }
 
+i {
+  width: auto;
+  height: auto;
+  display: block;
+  padding: 1rem 3rem;
+}
 .nav-item {
   flex: 1 1 auto;
   text-align: center;
-  flex-basis: 0;
-  flex-grow: 1;
   text-align: center;
-  color: var(--text-secondary);
+  color: var(--text-primary);
   transition-timing-function: ease;
   -moz-transition-timing-function: ease;
-  transition: background-color 0.5s, box-shadow 0.5s, color 0.5s;
-  -moz-transition: background-color 0.5s, box-shadow 0.5s, color 0.5s;
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary);
+  margin-right: 1rem;
+  margin-left: 1rem;
+  transform: translateY(45px);
+  position: relative;
+  z-index: 4;
+  border-radius: 0.2rem;
 }
 
 .nav-link {
@@ -98,6 +120,16 @@ a:visited {
   padding: 1rem 3rem;
   text-decoration: none;
   border: 0;
+  position: relative;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+i {
+  z-index: 5;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -109,13 +141,13 @@ a:visited {
   position: absolute;
   background-color: #f1f1f1;
   min-width: 160px;
+  width: 100%;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  transition: visibility 0s, opacity 1s;
-  -moz-transition: visibility 0s, opacity 1s;
-  -webkit-transition: visibility 0s, opacity 1s;
-  -ms-transition: visibility 0s, opacity 1s;
-  -o-transition: visibility 0s, opacity 1s;
+  transition: visibility 0s, opacity 0.5s;
+  -moz-transition: visibility 0s, opacity 0.5s;
+  -webkit-transition: visibility 0s, opacity 0.5s;
+  -ms-transition: visibility 0s, opacity 0.5s;
+  -o-transition: visibility 0s, opacity 0.5s;
   transition-timing-function: ease;
   -moz-transition-timing-function: ease;
 }
@@ -136,9 +168,9 @@ a:visited {
 /* Change color of dropdown links on hover */
 
 .nav-item:hover {
-  background-color: #f1f1f1;
-  color: var(--text-primary);
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+  background-color: var(--secondary);
+  color: var(--text-secondary);
 }
 
 /* Show the dropdown menu on hover */
@@ -164,11 +196,21 @@ a:visited {
   margin-right: auto;
   margin-left: auto;
   display: flex;
+  flex-direction: row;
 }
 
-.chefImg {
+.content .section-column .section-row {
+  max-width: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.image {
   width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 .section-column {
@@ -187,7 +229,7 @@ a:visited {
 }
 
 .width-40 {
-  width: 40%;
+  width: 200%;
   margin-top: auto;
   margin-bottom: auto;
   height: auto;
@@ -224,7 +266,6 @@ tr {
 }
 
 tbody tr:hover {
-  /* background-color: #e9ecef;  */
   box-shadow: 0px 9px 16px 0px rgba(0, 0, 0, 0.2);
   background-color: white;
 }
@@ -233,6 +274,30 @@ tbody tr:hover {
   outline: 0 !important;
 }
 
+a {
+  text-decoration-line: none;
+  position: relative;
+}
+
+.nav-item::after {
+  content: "";
+  height: 30px;
+  width: 30px;
+  background-color: var(--primary);
+  position: absolute;
+  transform: rotate(45deg) translateX(-50%);
+  top: -0px;
+  left: 50%;
+  z-index: -1;
+
+  transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  transition: 0.15;
+  -moz-transition: 0.15s;
+}
+.nav-item:hover:after {
+  opacity: 0;
+}
 .list-padding li {
   padding-top: 0.7rem;
 }
@@ -240,8 +305,68 @@ tbody tr:hover {
 .color-secondary {
   background-color: var(--secondary);
 }
+.head-banner h5 {
+  margin-bottom: 6rem;
+}
 
 .head-banner h1,
 .head-banner h5 {
-  margin-left: 8rem;
+  margin-left: 15rem;
+  color: #f1f1f1;
+  z-index: 4;
+  position: relative;
+}
+
+.alight-center {
+  text-align: center;
+}
+.triangle-up {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 50px solid #555;
+}
+
+i {
+  padding-bottom: 1rem;
+  padding-top: 0;
+  font-size: 1.75rem;
+}
+
+.recipe {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.recipe .image {
+  height: 300px;
+  width: 300px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 0.75rem;
+  }
+  .section-row {
+    flex-direction: column;
+  }
+  .head-banner h1,
+  .head-banner h5 {
+    margin-left: 1rem;
+  }
+
+  blockquote {
+    margin: 0;
+  }
+  .width-40 {
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: auto;
+  }
+  .chefImg {
+    padding-bottom: 10px;
+  }
 }
