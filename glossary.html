@@ -10,159 +10,169 @@
   <link rel="stylesheet" href="css/recette.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
     crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Domine" rel="stylesheet">
 
   <title>recette</title>
 </head>
 
 <body>
+  <div>
+    <!-- Banner-->
+    <div class="head-banner">
+      <div class="overlay"></div>
+      <h1>recette
+        <small class="font-weight-light">. recipe</small>
+      </h1>
+      <h5>À votre goût / To one's liking</h5>
 
-   <!-- Banner-->
-   <div class="head-banner">
-    <div class="overlay"></div>
-    <h1>recette
-      <small class="font-weight-light">. recipe</small>
-    </h1>
-    <h5>À votre goût / To one's liking</h5>
-
-    <!--Navbar-->
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="index.html">Home</a>
-        <i class="fas fa-home"></i>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link" href="#">Recipe</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="glossary.html">Glossary</a>
-      </li>
-    </ul>
-  </div>
-
-  <div class="content">
-    <div class="section-column">
-      <h1>Glossary</h1>
-      <p>Type something in the input field to search the table for first names, last names or emails:</p>
-      <table class="table">
-        <thead>
-          <tr>
-            <th>Term</th>
-            <th>Definition</th>
-          </tr>
-        </thead>
-        <tbody id="glossaryTable">
-          <tr>
-            <td>Bake</td>
-            <td>To cook in an oven</td>
-          </tr>
-          <tr>
-            <td>Beat</td>
-            <td>To mix ingredients together using a fast, circular movement with a spoon, fork, whisk or mixer</td>
-          </tr>
-          <tr>
-            <td>Blend</td>
-            <td>To mix ingredients together gently with a spoon, fork, or until combined</td>
-          </tr>
-          <tr>
-            <td>Boil</td>
-            <td>To heat a food so that the liquid gets hot enough for bubbles to rise and break the surface</td>
-          </tr>
-          <tr>
-            <td>Broil</td>
-            <td>To cook under direct heat</td>
-          </tr>
-          <tr>
-            <td>Brown</td>
-            <td>To cook over medium or high heat until surface of food browns or darkens</td>
-          </tr>
-          <tr>
-            <td>Chop</td>
-            <td>To cut into small pieces</td>
-          </tr>
-          <tr>
-            <td>Cup</td>
-            <td>A small, bowl-shaped container for drinking from, typically having a handle and used with a matching saucer for
-              hot drinks.
-              <br>
-              <br>Form (one's hand or hands) into the curved shape of a cup.
-              <br>
-              <br>A measurement equal to 8 US fluid ounces</td>
-          </tr>
-          <tr>
-            <td>Dice</td>
-            <td>To cut into small cubes</td>
-          </tr>
-          <tr>
-            <td>Drain</td>
-            <td>To remove all the liquid using a colander, strainer, or by pressing a plate against the food while tilting the
-              container
-            </td>
-          </tr>
-          <tr>
-            <td>Grate/Shred</td>
-            <td>To scrape food against the holes of a grater making thin pieces</td>
-          </tr>
-          <tr>
-            <td>Grease</td>
-            <td>To lightly coat with oil, butter, margarine, or non-stick spray so food does not stick when cooking or baking</td>
-          </tr>
-          <tr>
-            <td>Knead</td>
-            <td>To press, fold and stretch dough until it is smooth and uniform, usually done by pressing with the heels of the
-              hands
-            </td>
-          </tr>
-          <tr>
-            <td>Marinate</td>
-            <td>To soak food in a liquid to tenderize or add flavor to it (the liquid is called a "marinade")</td>
-          </tr>
-          <tr>
-            <td>Mash</td>
-            <td>To squash food with a fork, spoon, or masher</td>
-          </tr>
-          <tr>
-            <td>Mince</td>
-            <td>To cut into very small pieces, smaller than chopped or diced pieces</td>
-          </tr>
-          <tr>
-            <td>Mix</td>
-            <td>To stir ingredients together with a spoon, fork, or electric mixer until well combined</td>
-          </tr>
-          <tr>
-            <td>Preheat</td>
-            <td>To turn oven on ahead of time so that it is at the desired temperature when needed (usually takes about 5 to
-              10 minutes)
-            </td>
-          </tr>
-          <tr>
-            <td>Sauté</td>
-            <td>To cook quickly in a little oil, butter, or margarine</td>
-          </tr>
-          <tr>
-            <td>Simmer</td>
-            <td>To cook in liquid over low heat (low boil) so that bubbles just begin to break the surface</td>
-          </tr>
-          <tr>
-            <td>Steam</td>
-            <td>To cook food over steam without putting the food directly in water (usually done with a steamer)</td>
-          </tr>
-          <tr>
-            <td>Stir Fry</td>
-            <td>To quickly cook small pieces of food over high heat while constantly stirring the food until it is crisply tender
-              (usually done with a wok)</td>
-          </tr>
-        </tbody>
-      </table>
+      <!--Navbar-->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="index.html">
+            <p>Home</p>
+            <i class="fas fa-home"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="recipe.html">
+            <p>Recipe</p>
+            <i class="fas fa-book"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="glossary.html">
+            <p>Glossary</p>
+            <i class="fas fa-list-ul"></i>
+          </a>
+        </li>
+      </ul>
     </div>
-  </div>
 
-  <!--Footer-->
-  <footer class="color-secondary">
-    <div class="section-column">
-      <h3>Lorem ipsum</h3>
-      <p>Lorem ipsum</p>
+    <div class="content">
+      <div class="section-column">
+        <h1>Glossary</h1>
+        <p>Type something in the input field to search the table for first names, last names or emails:</p>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Term</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody id="glossaryTable">
+            <tr>
+              <td>Bake</td>
+              <td>To cook in an oven</td>
+            </tr>
+            <tr>
+              <td>Beat</td>
+              <td>To mix ingredients together using a fast, circular movement with a spoon, fork, whisk or mixer</td>
+            </tr>
+            <tr>
+              <td>Blend</td>
+              <td>To mix ingredients together gently with a spoon, fork, or until combined</td>
+            </tr>
+            <tr>
+              <td>Boil</td>
+              <td>To heat a food so that the liquid gets hot enough for bubbles to rise and break the surface</td>
+            </tr>
+            <tr>
+              <td>Broil</td>
+              <td>To cook under direct heat</td>
+            </tr>
+            <tr>
+              <td>Brown</td>
+              <td>To cook over medium or high heat until surface of food browns or darkens</td>
+            </tr>
+            <tr>
+              <td>Chop</td>
+              <td>To cut into small pieces</td>
+            </tr>
+            <tr>
+              <td>Cup</td>
+              <td>A small, bowl-shaped container for drinking from, typically having a handle and used with a matching saucer
+                for hot drinks.
+                <br>
+                <br>Form (one's hand or hands) into the curved shape of a cup.
+                <br>
+                <br>A measurement equal to 8 US fluid ounces</td>
+            </tr>
+            <tr>
+              <td>Dice</td>
+              <td>To cut into small cubes</td>
+            </tr>
+            <tr>
+              <td>Drain</td>
+              <td>To remove all the liquid using a colander, strainer, or by pressing a plate against the food while tilting
+                the container
+              </td>
+            </tr>
+            <tr>
+              <td>Grate/Shred</td>
+              <td>To scrape food against the holes of a grater making thin pieces</td>
+            </tr>
+            <tr>
+              <td>Grease</td>
+              <td>To lightly coat with oil, butter, margarine, or non-stick spray so food does not stick when cooking or baking</td>
+            </tr>
+            <tr>
+              <td>Knead</td>
+              <td>To press, fold and stretch dough until it is smooth and uniform, usually done by pressing with the heels of
+                the hands
+              </td>
+            </tr>
+            <tr>
+              <td>Marinate</td>
+              <td>To soak food in a liquid to tenderize or add flavor to it (the liquid is called a "marinade")</td>
+            </tr>
+            <tr>
+              <td>Mash</td>
+              <td>To squash food with a fork, spoon, or masher</td>
+            </tr>
+            <tr>
+              <td>Mince</td>
+              <td>To cut into very small pieces, smaller than chopped or diced pieces</td>
+            </tr>
+            <tr>
+              <td>Mix</td>
+              <td>To stir ingredients together with a spoon, fork, or electric mixer until well combined</td>
+            </tr>
+            <tr>
+              <td>Preheat</td>
+              <td>To turn oven on ahead of time so that it is at the desired temperature when needed (usually takes about 5 to
+                10 minutes)
+              </td>
+            </tr>
+            <tr>
+              <td>Sauté</td>
+              <td>To cook quickly in a little oil, butter, or margarine</td>
+            </tr>
+            <tr>
+              <td>Simmer</td>
+              <td>To cook in liquid over low heat (low boil) so that bubbles just begin to break the surface</td>
+            </tr>
+            <tr>
+              <td>Steam</td>
+              <td>To cook food over steam without putting the food directly in water (usually done with a steamer)</td>
+            </tr>
+            <tr>
+              <td>Stir Fry</td>
+              <td>To quickly cook small pieces of food over high heat while constantly stirring the food until it is crisply
+                tender (usually done with a wok)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
-  </footer>
+
+    <!--Footer-->
+    <footer class="color-secondary">
+      <div class="section-column">
+        <h3>Lorem ipsum</h3>
+        <p>Lorem ipsum</p>
+      </div>
+    </footer>
+  </div>
 
 
   <!-- Optional JavaScript -->
